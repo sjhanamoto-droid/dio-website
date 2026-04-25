@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# OMC state
+.omc/
+**/.omc/
+**/.omc
+
+# Photoshop
+*.psd
+*.PSD
+
+# Reference materials (PDFs)
+images/works/_reference/
+
+# Edited/rejected subfolders
+**/編集後/
+**/没/
+
+# Project PDFs inside works folders
+images/works/**/*.pdf
+
+# Large PDF
+images/works/ASM_2014-2016.pdf
