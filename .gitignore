@@ -23,3 +23,4 @@ images/works/**/*.pdf
 
 # Large PDF
 images/works/ASM_2014-2016.pdf
+.vercel
