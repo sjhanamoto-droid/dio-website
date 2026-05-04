@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+
+# OMC state
+.omc/
+**/.omc/
+
+# Photoshop source files
+*.psd
+*.PSD
+
+# PDF files
+*.pdf
+
+# Reference materials
+images/works/_reference/
+
+# Edited/rejected subfolders
+**/編集後/
+**/没/
+
+# JSON data files in images
+images/works/**/*.json
