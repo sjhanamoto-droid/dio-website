@@ -1464,6 +1464,8 @@ a.service-card .service-card-title {
 .password-gate-inner {
   text-align: center;
   padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .password-gate-logo {
@@ -1762,6 +1764,24 @@ a.service-card .service-card-title {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+
+  .password-gate-inner {
+    padding: 40px 20px;
+  }
+
+  .password-gate-form {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .password-gate-form input {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+  }
+
+  .password-gate-form button {
+    padding: 14px 32px;
   }
 
   .header-inner {
