@@ -1952,12 +1952,34 @@ a.service-card .service-card-title {
     text-align: left;
   }
 
+  .works-category-filter {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+
+  .works-category-filter button {
+    padding: 12px 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .project-photos.layout-a,
   .project-photos.layout-b,
   .project-photos.layout-c,
   .project-photos.layout-d {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+  }
+
+  .project-photos.layout-a .photo-item:nth-child(n),
+  .project-photos.layout-b .photo-item:nth-child(n),
+  .project-photos.layout-c .photo-item:nth-child(n),
+  .project-photos.layout-d .photo-item:nth-child(n) {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .project-photos.layout-a .photo-item:nth-child(1),
@@ -1967,14 +1989,6 @@ a.service-card .service-card-title {
   .project-photos.layout-c .photo-item:nth-child(7),
   .project-photos.layout-d .photo-item:nth-child(1) {
     grid-column: 1 / -1;
-  }
-
-  .project-photos.layout-a .photo-item,
-  .project-photos.layout-b .photo-item,
-  .project-photos.layout-c .photo-item,
-  .project-photos.layout-d .photo-item {
-    grid-column: auto;
-    grid-row: auto;
   }
 
   .project-photos .photo-item img {
@@ -2045,5 +2059,43 @@ a.service-card .service-card-title {
     width: 100%;
     max-width: 280px;
     justify-content: center;
+  }
+
+  /* Works page mobile */
+  .works-category-filter button {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+
+  .project-spread {
+    padding: 40px 0;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .project-category-tag {
+    font-size: 9px;
+    padding: 3px 10px;
+    margin-left: 10px;
+  }
+
+  .project-credits {
+    gap: 16px;
+  }
+
+  .project-photos.layout-a,
+  .project-photos.layout-b,
+  .project-photos.layout-c,
+  .project-photos.layout-d {
+    grid-template-columns: 1fr;
+  }
+
+  .project-photos .photo-item img,
+  .project-photos.layout-a .photo-item:nth-child(1) img,
+  .project-photos.layout-a .photo-item:nth-child(2) img,
+  .project-photos.layout-d .photo-item:nth-child(1) img {
+    height: 200px;
   }
 }
